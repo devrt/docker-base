@@ -3,11 +3,11 @@
 # - fix initctl behavior 
 # - install chef
 
-FROM ubuntu:saucy
+FROM ubuntu:raring
 MAINTAINER Yosuke Matsusaka "yosuke.matsusaka@gmail.com"
 
 # Enable universe and restricted repository
-RUN echo "deb http://archive.ubuntu.com/ubuntu saucy main universe restricted" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu raring main universe restricted" > /etc/apt/sources.list
 
 # Hack for initctl                                    
 # See: https://github.com/dotcloud/docker/issues/1024 
